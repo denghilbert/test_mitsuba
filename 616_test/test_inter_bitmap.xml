@@ -46,7 +46,7 @@
 					<scale x="1" y="1"/>
 					
 					<!-- Offset texture by [0.5, 1.0] -->
-					<translate x="0.5" y="1.0"/>
+					<translate x="0.0" y="0.0"/>
 				</transform>
 
 				<float name="pos1" value="0.0"/>
