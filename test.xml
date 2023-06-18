@@ -36,27 +36,53 @@
 <!-- Materials -->
 
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
-		<bsdf type="diffuse" name="bsdf">
-			<texture type="color_ramp" name="reflectance">
-			
+		<bsdf type="principled" name="bsdf">
+<!--			<texture type="color_ramp" name="base_color">-->
+<!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
+<!--				-->
+<!--			    	<transform name="to_uv">-->
+<!--					&lt;!&ndash; Scale texture by factor of 2 &ndash;&gt;-->
+<!--					<scale x="1" y="1"/>-->
+<!--					-->
+<!--					&lt;!&ndash; Offset texture by [0.5, 1.0] &ndash;&gt;-->
+<!--					<translate x="0.0" y="0.0"/>-->
+<!--				</transform>-->
+
+<!--				<float name="pos1" value="1.0"/>-->
+<!--				<float name="pos2" value="0.0"/>-->
+<!--				-->
+<!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
+<!--				<rgb name="color2" value="0.01, 0.01, 0.01"/>-->
+<!--			</texture>-->
+			<rgb name="base_color" value="0.9, 0.1, 0.1"/>
+			<float name="spec_tint" value="0.000000"/>
+			<float name="spec_trans" value="0.000000"/>
+<!--			<float name="metallic" value="0.000000"/>-->
+			<texture type="color_ramp" name="metallic">
 				<string name="filename" value="textures/bump_one_channel.jpg"/>
-				
-		            	<transform name="to_uv">
+
+			    	<transform name="to_uv">
 					<!-- Scale texture by factor of 2 -->
 					<scale x="1" y="1"/>
-					
+
 					<!-- Offset texture by [0.5, 1.0] -->
 					<translate x="0.0" y="0.0"/>
 				</transform>
 
+<!--				<float name="factor" value="0.5"/>-->
 				<float name="pos1" value="1.0"/>
 				<float name="pos2" value="0.0"/>
-				
+
 				<rgb name="color1" value="1.0, 1.0, 1.0"/>
 				<rgb name="color2" value="0.01, 0.01, 0.01"/>
 			</texture>
-			
-
+			<float name="anisotropic" value="0.000000"/>
+			<float name="roughness" value="0.500000"/>
+			<float name="sheen" value="0.000000"/>
+			<float name="sheen_tint" value="0.500000"/>
+			<float name="clearcoat" value="0.000000"/>
+			<float name="clearcoat_gloss" value="0.000000"/>
+			<float name="specular" value="0.500000"/>
 		</bsdf>
 	</bsdf>
 
