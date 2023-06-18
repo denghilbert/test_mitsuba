@@ -39,7 +39,7 @@
 		<bsdf type="diffuse" name="bsdf">
 			<texture type="color_ramp" name="reflectance">
 			
-				<string name="filename" value="textures/mat_AI43_001_014_bump.jpg"/>
+				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
 				
 		            	<transform name="to_uv">
 					<!-- Scale texture by factor of 2 -->
