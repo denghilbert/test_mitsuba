@@ -39,18 +39,18 @@
 		<bsdf type="principled" name="bsdf">
 <!--			<texture type="color_ramp" name="base_color">-->
 <!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
-<!--				-->
+
 <!--			    	<transform name="to_uv">-->
 <!--					&lt;!&ndash; Scale texture by factor of 2 &ndash;&gt;-->
 <!--					<scale x="1" y="1"/>-->
-<!--					-->
+
 <!--					&lt;!&ndash; Offset texture by [0.5, 1.0] &ndash;&gt;-->
 <!--					<translate x="0.0" y="0.0"/>-->
 <!--				</transform>-->
 
 <!--				<float name="pos1" value="1.0"/>-->
 <!--				<float name="pos2" value="0.0"/>-->
-<!--				-->
+
 <!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
 <!--				<rgb name="color2" value="0.01, 0.01, 0.01"/>-->
 <!--			</texture>-->
