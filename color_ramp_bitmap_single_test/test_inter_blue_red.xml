@@ -38,7 +38,8 @@
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
 		<bsdf type="diffuse" name="bsdf">
 			<texture type="color_ramp" name="reflectance">
-			
+				<string name="mode" value="linear"/>
+				
 				<float name="factor" value="0.5"/>
 				<float name="pos1" value="0.0"/>
 				<float name="pos2" value="1.0"/>

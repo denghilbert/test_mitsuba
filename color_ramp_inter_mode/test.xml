@@ -40,7 +40,7 @@
 			<texture type="color_ramp" name="base_color">
 <!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
 				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
-				<string name="mode" value="CR_splines"/>
+				<string name="mode" value="ease"/>
 
 				<transform name="to_uv">
 					<!-- Scale texture by factor of 2 -->
