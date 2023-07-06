@@ -40,7 +40,7 @@
 			<texture type="color_ramp" name="base_color">
 <!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
 				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
-				<string name="mode" value="linear"/>
+				<string name="mode" value="b_spline"/>
 
 				<transform name="to_uv">
 					<!-- Scale texture by factor of 2 -->
@@ -65,25 +65,25 @@
 <!--				<rgb name="color5" value="0.475557, 0.481075, 0.892552"/>-->
 <!--				<rgb name="color6" value="0.86468, 0.0, 1.0"/>-->
 
-				<float name="num_band" value="4"/>
-				<!-- <float name="pos0" value="0.014091"/>
-				<float name="pos1" value="0.024091"/>
-				<float name="pos2" value="0.03091"/>
-				<float name="pos3" value="0.04091"/> -->
-				<float name="pos0" value="0.04"/>
-				<float name="pos1" value="0.084091"/>
-				<float name="pos2" value="0.14091"/>
-				<float name="pos3" value="0.186364"/>
-				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>
-				<rgb name="color1" value="0.019626, 0.07792, 0.174928"/>
-				<rgb name="color2" value="0.083631, 1.0, 0.19983"/>
-				<rgb name="color3" value="0.86468, 0.0, 1.0"/>
+<!--				<float name="num_band" value="4"/>-->
+<!--				&lt;!&ndash; <float name="pos0" value="0.014091"/>-->
+<!--				<float name="pos1" value="0.024091"/>-->
+<!--				<float name="pos2" value="0.03091"/>-->
+<!--				<float name="pos3" value="0.04091"/> &ndash;&gt;-->
+<!--				<float name="pos0" value="0.04"/>-->
+<!--				<float name="pos1" value="0.084091"/>-->
+<!--				<float name="pos2" value="0.14091"/>-->
+<!--				<float name="pos3" value="0.186364"/>-->
+<!--				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>-->
+<!--				<rgb name="color1" value="0.019626, 0.07792, 0.174928"/>-->
+<!--				<rgb name="color2" value="0.083631, 1.0, 0.19983"/>-->
+<!--				<rgb name="color3" value="0.86468, 0.0, 1.0"/>-->
 
-<!--				<float name="num_band" value="2"/>-->
-<!--				<float name="pos0" value="0.0"/>-->
-<!--				<float name="pos1" value="1.0"/>-->
-<!--				<rgb name="color0" value="0.0, 0.0, 0.204473"/>-->
-<!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
+				<float name="num_band" value="2"/>
+				<float name="pos0" value="0.0"/>
+				<float name="pos1" value="1.0"/>
+				<rgb name="color0" value="0.0, 0.0, 0.204473"/>
+				<rgb name="color1" value="1.0, 1.0, 1.0"/>
 
 			</texture>
 <!--			<rgb name="base_color" value="0.9, 0.1, 0.1"/>-->

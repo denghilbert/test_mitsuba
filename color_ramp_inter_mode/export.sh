@@ -6,5 +6,5 @@ echo "Finish Blender rendering"
 ~/Desktop/mitsuba3/build/mitsuba -o ./test.exr -m cuda_ad_rgb ./test.xml
 echo "Finish Mitsuba rendering"
 
-python ./compare.py
-echo "generate error map"
+#python ./compare.py
+#echo "generate error map"
