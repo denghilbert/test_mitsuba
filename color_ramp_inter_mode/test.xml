@@ -30,6 +30,36 @@
 		<film type="hdrfilm" name="film">
 			<integer name="width" value="$resx"/>
 			<integer name="height" value="$resy"/>
+
+<!--			<integer name="crop_offset_x" value="0"/>-->
+<!--			<integer name="crop_offset_x" value="480"/> bug-->
+<!--			<integer name="crop_offset_x" value="960"/>-->
+<!--			<integer name="crop_offset_x" value="1440"/>-->
+
+<!--			<integer name="crop_offset_y" value="0"/> bug-->
+<!--			<integer name="crop_offset_y" value="270"/>-->
+<!--			<integer name="crop_offset_y" value="540"/>-->
+<!--			<integer name="crop_offset_y" value="810"/>-->
+<!--			<integer name="crop_width" value="540"/>-->
+<!--			<integer name="crop_height" value="270"/>-->
+
+<!--			<integer name="crop_offset_x" value="700"/>-->
+<!--			<integer name="crop_offset_y" value="180"/>-->
+<!--			<integer name="crop_width" value="260"/>-->
+<!--			<integer name="crop_height" value="90"/>-->
+
+<!--&lt;!&ndash;			<integer name="crop_offset_x" value="700"/>&ndash;&gt;-->
+<!--			<integer name="crop_offset_x" value="881"/> &lt;!&ndash;from 879 to 881&ndash;&gt;-->
+<!--&lt;!&ndash;			<integer name="crop_offset_y" value="180"/>&ndash;&gt;-->
+<!--			<integer name="crop_offset_y" value="225"/>-->
+<!--			<integer name="crop_width" value="135"/>-->
+<!--			<integer name="crop_height" value="45"/>-->
+
+
+<!--			<integer name="crop_offset_x" value="881"/>-->
+<!--			<integer name="crop_offset_y" value="225"/>-->
+<!--			<integer name="crop_width" value="135"/>-->
+<!--			<integer name="crop_height" value="45"/>-->
 		</film>
 	</sensor>
 
@@ -38,6 +68,59 @@
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
 		<bsdf type="principled" name="bsdf">
 			<texture type="color_ramp" name="base_color">
+<!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
+				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
+				<transform name="to_uv">
+					<scale x="1" y="1"/>
+					<translate x="0.0" y="0.0"/>
+				</transform>
+
+<!--				<float name="factor" value="0.1"/>-->
+
+				<string name="mode" value="linear"/>
+
+				<float name="num_band" value="7"/>
+				<float name="pos0" value="0.04"/>
+				<float name="pos1" value="0.051023"/>
+				<float name="pos2" value="0.084091"/>
+				<float name="pos3" value="0.095796"/>
+				<float name="pos4" value="0.14091"/>
+				<float name="pos5" value="0.155227"/>
+				<float name="pos6" value="0.186364"/>
+				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>
+				<rgb name="color1" value="0.056574, 0.0, 0.456584"/>
+				<rgb name="color2" value="0.019626, 0.07792, 0.174928"/>
+				<rgb name="color3" value="0.598357, 0.0, 0.017593"/>
+				<rgb name="color4" value="0.083631, 1.0, 0.19983"/>
+				<rgb name="color5" value="0.475557, 0.481075, 0.892552"/>
+				<rgb name="color6" value="0.86468, 0.0, 1.0"/>
+
+<!--				<float name="num_band" value="4"/>-->
+<!--&lt;!&ndash;				<float name="pos0" value="0.014091"/>&ndash;&gt;-->
+<!--&lt;!&ndash;				<float name="pos1" value="0.024091"/>&ndash;&gt;-->
+<!--&lt;!&ndash;				<float name="pos2" value="0.03091"/>&ndash;&gt;-->
+<!--&lt;!&ndash;				<float name="pos3" value="0.04091"/>&ndash;&gt;-->
+<!--				<float name="pos0" value="0.04"/>-->
+<!--				<float name="pos1" value="0.084091"/>-->
+<!--				<float name="pos2" value="0.14091"/>-->
+<!--				<float name="pos3" value="0.186364"/>-->
+<!--				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>-->
+<!--				<rgb name="color1" value="0.019626, 0.07792, 0.174928"/>-->
+<!--				<rgb name="color2" value="0.083631, 1.0, 0.19983"/>-->
+<!--				<rgb name="color3" value="0.86468, 0.0, 1.0"/>-->
+
+<!--				<float name="num_band" value="2"/>-->
+<!--				<float name="pos0" value="0.0"/>-->
+<!--				<float name="pos1" value="1.0"/>-->
+<!--				<rgb name="color0" value="0.0, 0.0, 0.204473"/>-->
+<!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
+			</texture>
+<!--			<rgb name="base_color" value="0.9, 0.1, 0.1"/>-->
+			<float name="spec_tint" value="0.000000"/>
+			<float name="spec_trans" value="0.000000"/>
+
+<!--			<float name="metallic" value="0.000000"/>-->
+			<texture type="color_ramp" name="metallic">
 <!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
 				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
 				<string name="mode" value="linear"/>
@@ -49,82 +132,27 @@
 					<translate x="0.0" y="0.0"/>
 				</transform>
 
-<!--				<float name="num_band" value="7"/>-->
-<!--				<float name="pos0" value="0.04"/>-->
-<!--				<float name="pos1" value="0.084091"/>-->
-<!--				<float name="pos2" value="0.14091"/>-->
-<!--				<float name="pos3" value="0.186364"/>-->
-<!--				<float name="pos4" value="0.186364"/>-->
-<!--				<float name="pos5" value="0.186364"/>-->
-<!--				<float name="pos6" value="0.186364"/>-->
-<!--				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>-->
-<!--				<rgb name="color1" value="0.056574, 0.0, 0.456584"/>-->
-<!--				<rgb name="color2" value="0.019626, 0.07792, 0.174928"/>-->
-<!--				<rgb name="color3" value="0.598357, 0.0, 0.017593"/>-->
-<!--				<rgb name="color4" value="0.083631, 1.0, 0.19983"/>-->
-<!--				<rgb name="color5" value="0.475557, 0.481075, 0.892552"/>-->
-<!--				<rgb name="color6" value="0.86468, 0.0, 1.0"/>-->
+				<float name="num_band" value="2"/>
+				<float name="pos0" value="0.0"/>
+				<float name="pos1" value="1.0"/>
 
-				<float name="num_band" value="4"/>
-				<!-- <float name="pos0" value="0.014091"/>
-				<float name="pos1" value="0.024091"/>
-				<float name="pos2" value="0.03091"/>
-				<float name="pos3" value="0.04091"/> -->
-				<float name="pos0" value="0.04"/>
-				<float name="pos1" value="0.084091"/>
-				<float name="pos2" value="0.14091"/>
-				<float name="pos3" value="0.186364"/>
-				<rgb name="color0" value="0.602237, 0.482636, 0.0"/>
-				<rgb name="color1" value="0.019626, 0.07792, 0.174928"/>
-				<rgb name="color2" value="0.083631, 1.0, 0.19983"/>
-				<rgb name="color3" value="0.86468, 0.0, 1.0"/>
-
-<!--				<float name="num_band" value="2"/>-->
-<!--				<float name="pos0" value="0.0"/>-->
-<!--				<float name="pos1" value="1.0"/>-->
-<!--				<rgb name="color0" value="0.0, 0.0, 0.204473"/>-->
-<!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
-
+				<rgb name="color0" value="0.0, 0.0, 0.0"/>
+				<rgb name="color1" value="1.0, 1.0, 1.0"/>
 			</texture>
-<!--			<rgb name="base_color" value="0.9, 0.1, 0.1"/>-->
-			<float name="spec_tint" value="0.000000"/>
-			<float name="spec_trans" value="0.000000"/>
-
-			<float name="metallic" value="0.000000"/>
-
-<!--			<texture type="color_ramp" name="metallic">-->
-<!--&lt;!&ndash;				<string name="filename" value="textures/bump_one_channel.jpg"/>&ndash;&gt;-->
-<!--				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>-->
-<!--				<string name="mode" value="linear"/>-->
-
-<!--				<transform name="to_uv">-->
-<!--					&lt;!&ndash; Scale texture by factor of 2 &ndash;&gt;-->
-<!--					<scale x="1" y="1"/>-->
-<!--					&lt;!&ndash; Offset texture by [0.5, 1.0] &ndash;&gt;-->
-<!--					<translate x="0.0" y="0.0"/>-->
-<!--				</transform>-->
-<!--				-->
-<!--				<float name="num_band" value="2"/>-->
-<!--				<float name="pos0" value="0.0"/>-->
-<!--				<float name="pos1" value="1.0"/>-->
-
-<!--				<rgb name="color0" value="0.01, 0.01, 0.01"/>-->
-<!--				<rgb name="color1" value="1.0, 1.0, 1.0"/>-->
-<!--			</texture>-->
 			<float name="anisotropic" value="0.000000"/>
-			<float name="roughness" value="0.500000"/>
-<!--			<texture type="color_ramp" name="roughness">-->
-<!--				<string name="mode" value="linear"/>-->
+<!--			<float name="roughness" value="0.500000"/>-->
+			<texture type="color_ramp" name="roughness">
+				<string name="mode" value="linear"/>
 
-<!--				<float name="factor" value="0.5"/>-->
+				<float name="factor" value="0.5"/>
 
-<!--				<float name="num_band" value="2"/>-->
-<!--				<float name="pos0" value="0.0"/>-->
-<!--				<float name="pos1" value="1.0"/>-->
+				<float name="num_band" value="2"/>
+				<float name="pos0" value="0.0"/>
+				<float name="pos1" value="1.0"/>
 
-<!--				<rgb name="color0" value="1.0, 1.0, 1.0"/>-->
-<!--				<rgb name="color1" value="0.0, 0.0, 0.0"/>-->
-<!--			</texture>-->
+				<rgb name="color0" value="1.0, 1.0, 1.0"/>
+				<rgb name="color1" value="0.0, 0.0, 0.0"/>
+			</texture>
 			<float name="sheen" value="0.000000"/>
 			<float name="sheen_tint" value="0.500000"/>
 			<float name="clearcoat" value="0.000000"/>
