@@ -68,6 +68,7 @@
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
 		<bsdf type="principled" name="bsdf">
 			<texture type="color_ramp" name="base_color">
+			
 <!--				<string name="filename" value="textures/bump_one_channel.jpg"/>-->
 				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
 				<transform name="to_uv">

@@ -1,0 +1,76 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+	<default name="spp" value="256"/>
+	<default name="resx" value="1920"/>
+	<default name="resy" value="1080"/>
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+	<sensor type="perspective" id="elm__4" name="elm__4">
+		<string name="fov_axis" value="x"/>
+		<float name="fov" value="39.597752"/>
+		<float name="principal_point_offset_x" value="0.000000"/>
+		<float name="principal_point_offset_y" value="-0.000000"/>
+		<float name="near_clip" value="0.100000"/>
+		<float name="far_clip" value="100.000000"/>
+		<transform name="to_world">
+			<rotate x="1" angle="-153.5592908827048"/>
+			<rotate y="1" angle="-46.691938147394204"/>
+			<rotate z="1" angle="-179.999991348578"/>
+			<translate value="7.358891 4.958309 6.925791"/>
+		</transform>
+		<sampler type="independent" name="sampler">
+			<integer name="sample_count" value="$spp"/>
+		</sampler>
+		<film type="hdrfilm" name="film">
+			<integer name="width" value="$resx"/>
+			<integer name="height" value="$resy"/>
+		</film>
+	</sensor>
+
+<!-- Materials -->
+
+	<bsdf type="twosided" id="mat-Material" name="mat-Material">
+		<bsdf type="bumpmap" name="bsdf">
+			<texture type="bitmap" name="bumpmap_bsdf">
+				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
+			</texture>
+			<bsdf type="principled" name="principled_bsdf">
+				<color_ramp filename="textures/AI42_003_floor_wood_diff_02.jpg" mode="B_SPLINE" num_band="4" pos0="0.03999999910593033" color0="[0.6022369861602783, 0.4826360046863556, 0.0]" pos1="0.08409100025892258" color1="[0.01962600089609623, 0.07791999727487564, 0.1749279946088791]" pos2="0.14090999960899353" color2="[0.0836310014128685, 1.0, 0.19982999563217163]" pos3="0.18636399507522583" color3="[0.8646799921989441, 0.0, 1.0]"/>
+				<float name="spec_tint" value="0.000000"/>
+				<float name="spec_trans" value="0.000000"/>
+				<float name="metallic" value="0.000000"/>
+				<float name="anisotropic" value="0.000000"/>
+				<float name="roughness" value="0.707107"/>
+				<float name="sheen" value="0.000000"/>
+				<float name="sheen_tint" value="0.500000"/>
+				<float name="clearcoat" value="0.000000"/>
+				<float name="clearcoat_gloss" value="0.000000"/>
+				<float name="specular" value="0.500000"/>
+			</bsdf>
+		</bsdf>
+	</bsdf>
+
+<!-- Emitters -->
+
+	<emitter type="point" id="elm__3" name="elm__3">
+		<point name="position" x="1.9208531379699707" y="3.2496604919433594" z="-4.6793646812438965"/>
+		<rgb value="79.577469 79.577469 79.577469" name="intensity"/>
+	</emitter>
+
+<!-- Shapes -->
+
+	<shape type="ply" id="elm__2" name="elm__2">
+		<string name="filename" value="meshes/Cube.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Material" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>
