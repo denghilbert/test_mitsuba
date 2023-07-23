@@ -36,23 +36,42 @@
 <!-- Materials -->
 
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
-		<bsdf type="bumpmap" name="bsdf">
-			<texture type="bitmap" name="bumpmap_bsdf">
-				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
+		<bsdf type="principled" name="bsdf">
+			<texture type="color_ramp" name="base_color">
+				<texture type="color_ramp" name="factor">
+					<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
+					<string name="mode" value="B_SPLINE"/>
+					<integer name="num_band" value="4"/>
+					<float name="pos0" value="0.040000"/>
+					<rgb value="0.602237 0.482636 0.000000" name="color0"/>
+					<float name="pos1" value="0.084091"/>
+					<rgb value="0.019626 0.077920 0.174928" name="color1"/>
+					<float name="pos2" value="0.140910"/>
+					<rgb value="0.083631 1.000000 0.199830" name="color2"/>
+					<float name="pos3" value="0.186364"/>
+					<rgb value="0.864680 0.000000 1.000000" name="color3"/>
+				</texture>
+				<string name="mode" value="B_SPLINE"/>
+				<integer name="num_band" value="4"/>
+				<float name="pos0" value="0.040000"/>
+				<rgb value="0.602237 0.482636 0.000000" name="color0"/>
+				<float name="pos1" value="0.084091"/>
+				<rgb value="0.019626 0.077920 0.174928" name="color1"/>
+				<float name="pos2" value="0.140910"/>
+				<rgb value="0.083631 1.000000 0.199830" name="color2"/>
+				<float name="pos3" value="0.186364"/>
+				<rgb value="0.864680 0.000000 1.000000" name="color3"/>
 			</texture>
-			<bsdf type="principled" name="principled_bsdf">
-				<color_ramp filename="textures/AI42_003_floor_wood_diff_02.jpg" mode="B_SPLINE" num_band="4" pos0="0.03999999910593033" color0="[0.6022369861602783, 0.4826360046863556, 0.0]" pos1="0.08409100025892258" color1="[0.01962600089609623, 0.07791999727487564, 0.1749279946088791]" pos2="0.14090999960899353" color2="[0.0836310014128685, 1.0, 0.19982999563217163]" pos3="0.18636399507522583" color3="[0.8646799921989441, 0.0, 1.0]"/>
-				<float name="spec_tint" value="0.000000"/>
-				<float name="spec_trans" value="0.000000"/>
-				<float name="metallic" value="0.000000"/>
-				<float name="anisotropic" value="0.000000"/>
-				<float name="roughness" value="0.707107"/>
-				<float name="sheen" value="0.000000"/>
-				<float name="sheen_tint" value="0.500000"/>
-				<float name="clearcoat" value="0.000000"/>
-				<float name="clearcoat_gloss" value="0.000000"/>
-				<float name="specular" value="0.500000"/>
-			</bsdf>
+			<float name="spec_tint" value="0.000000"/>
+			<float name="spec_trans" value="0.000000"/>
+			<float name="metallic" value="0.000000"/>
+			<float name="anisotropic" value="0.000000"/>
+			<float name="roughness" value="0.707107"/>
+			<float name="sheen" value="0.000000"/>
+			<float name="sheen_tint" value="0.500000"/>
+			<float name="clearcoat" value="0.000000"/>
+			<float name="clearcoat_gloss" value="0.000000"/>
+			<float name="specular" value="0.500000"/>
 		</bsdf>
 	</bsdf>
 
