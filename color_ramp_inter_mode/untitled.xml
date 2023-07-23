@@ -38,19 +38,7 @@
 	<bsdf type="twosided" id="mat-Material" name="mat-Material">
 		<bsdf type="principled" name="bsdf">
 			<texture type="color_ramp" name="base_color">
-				<texture type="color_ramp" name="factor">
-					<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
-					<string name="mode" value="B_SPLINE"/>
-					<integer name="num_band" value="4"/>
-					<float name="pos0" value="0.040000"/>
-					<rgb value="0.602237 0.482636 0.000000" name="color0"/>
-					<float name="pos1" value="0.084091"/>
-					<rgb value="0.019626 0.077920 0.174928" name="color1"/>
-					<float name="pos2" value="0.140910"/>
-					<rgb value="0.083631 1.000000 0.199830" name="color2"/>
-					<float name="pos3" value="0.186364"/>
-					<rgb value="0.864680 0.000000 1.000000" name="color3"/>
-				</texture>
+				<string name="filename" value="textures/AI42_003_floor_wood_diff_02.jpg"/>
 				<string name="mode" value="B_SPLINE"/>
 				<integer name="num_band" value="4"/>
 				<float name="pos0" value="0.040000"/>
